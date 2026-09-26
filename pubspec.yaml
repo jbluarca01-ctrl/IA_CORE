@@ -1,0 +1,14 @@
+name: ai_core
+description: Cliente de IA multiproveedor (adaptadores OpenAI-compatibles, NVIDIA NIM, Gemini, Anthropic, OpenRouter) compartido por PRAXIA y Nettia.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  http: ^1.3.0
+
+dev_dependencies:
+  test: ^1.25.0
+  lints: ^6.0.0
