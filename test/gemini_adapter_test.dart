@@ -22,7 +22,8 @@ void main() {
             request.url.path,
             contains('/models/gemini-1.5-pro:generateContent'),
           );
-          expect(request.url.queryParameters['key'], 'TEST-KEY-gemini-999');
+          // SPEC-008 S2 (Nettia, 2026-11-09): la key ya no va en la URL.
+          expect(request.url.queryParameters['key'], isNull);
           expect(request.headers['x-goog-api-key'], 'TEST-KEY-gemini-999');
 
           final body = jsonDecode(request.body) as Map<String, dynamic>;
