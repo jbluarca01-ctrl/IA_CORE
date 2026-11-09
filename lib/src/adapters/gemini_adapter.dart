@@ -34,7 +34,7 @@ class GeminiAdapter implements ChatCompletionService {
             ? baseUrl.trim().replaceAll(RegExp(r'/+$'), '')
             : providerType.defaultBaseUrl;
     final response = await _client
-        .get(Uri.parse('$base/models?key=$apiKey'))
+        .get(Uri.parse('$base/models'), headers: {'x-goog-api-key': apiKey})
         .timeout(const Duration(seconds: 15));
 
     if (response.statusCode != 200) {
@@ -95,7 +95,7 @@ class GeminiAdapter implements ChatCompletionService {
             : config.effectiveModelId;
 
     final url = Uri.parse(
-      '${config.effectiveBaseUrl}/models/$cleanModelId:generateContent?key=${config.apiKey}',
+      '${config.effectiveBaseUrl}/models/$cleanModelId:generateContent',
     );
 
     final headers = <String, String>{
@@ -299,7 +299,7 @@ class GeminiAdapter implements ChatCompletionService {
             : config.effectiveModelId;
 
     final url = Uri.parse(
-      '${config.effectiveBaseUrl}/models/$cleanModelId:streamGenerateContent?alt=sse&key=${config.apiKey}',
+      '${config.effectiveBaseUrl}/models/$cleanModelId:streamGenerateContent?alt=sse',
     );
 
     final headers = <String, String>{
