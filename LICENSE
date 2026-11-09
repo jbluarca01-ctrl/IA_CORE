@@ -1,0 +1,22 @@
+ai_core
+Copyright 2026 Jairo Enrique Luarca Bonilla
+
+Este proyecto se ofrece bajo DOBLE LICENCIA. Quien lo use, copie,
+modifique o distribuya puede elegir UNA de estas dos licencias:
+
+  - Apache License, Version 2.0  (texto completo en LICENSE-APACHE)
+  - GNU General Public License, Version 3  (texto completo en LICENSE-GPL)
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-only
+
+-----------------------------------------------------------------------
+
+This project is DUAL-LICENSED. You may use, copy, modify and distribute
+it under the terms of EITHER of the following licenses, at your option:
+
+  - Apache License, Version 2.0  (see LICENSE-APACHE)
+  - GNU General Public License, Version 3  (see LICENSE-GPL)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under these licenses is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
